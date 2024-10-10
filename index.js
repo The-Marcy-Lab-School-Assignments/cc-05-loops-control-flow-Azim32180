@@ -22,10 +22,10 @@ const greaterNum = (a, b) => {
     }
   }
 };
-console.log(greaterNum(10, 7)); //returns 10
-console.log(greaterNum(1.14, 1.14)); //returns "both integers are equal"
-console.log(greaterNum("21", 21)); //returns null
-console.log(greaterNum("21", "21")); //returns null
+// console.log(greaterNum(10, 7)); //returns 10
+// console.log(greaterNum(1.14, 1.14)); //returns "both integers are equal"
+// console.log(greaterNum("21", 21)); //returns null
+// console.log(greaterNum("21", "21")); //returns null
 
 // Code 3
 const sumOfFourAndSix = () => {
@@ -40,6 +40,13 @@ const sumOfFourAndSix = () => {
 // console.log(sumOfFourAndSix()); //returns 41832
 
 // Code 4
-// const oddAndEvenToN = (num) => {
-
-// }
+const oddAndEvenToN = (num) => {
+  for (let i = 0; i <= num; i++) {
+    if (i % 2 === 0) {
+      console.log(`${i} is even`);
+    } else if (i % 2 === 1) {
+      console.log(`${i} is odd`);
+    }
+  }
+};
+// oddAndEvenToN(100);
